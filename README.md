@@ -93,11 +93,11 @@ La classe `Time` permet de gérer l'heure, les minutes et les secondes, ainsi qu
 
 - **Attributs** : Cette section décrit les attributs principaux de la classe `Time`, comme les heures minimales et maximales, ainsi que les limites des secondes et des minutes.
   
-- **Méthodes** :
-  - `__init__`: Cette méthode initialise l'heure à partir des paramètres donnés et définit le format de l'heure (12h ou 24h).
-  - `in_seconds`: Retourne l'heure sous forme de secondes depuis minuit, ce qui permet d'effectuer des calculs de comparaison avec d'autres horaires.
-  - `increment_time`: Cette méthode incrémente l'heure d'une seconde, gère le passage des secondes, minutes, et heures, et redémarre l'horloge si nécessaire (par exemple, de 23:59:59 à 00:00:00).
-  - `__str__`: Retourne l'heure sous forme d'une chaîne de caractères formatée, en fonction du format de l'heure spécifié.
+- **Méthodes** :  
+  - `__init__`: Cette méthode initialise l'heure à partir des paramètres donnés et définit le format de l'heure (12h ou 24h).  
+  - `in_seconds`: Retourne l'heure sous forme de secondes depuis minuit, ce qui permet d'effectuer des calculs de comparaison avec d'autres horaires.  
+  - `increment_time`: Cette méthode incrémente l'heure d'une seconde, gère le passage des secondes, minutes, et heures, et redémarre l'horloge si nécessaire (par exemple, de 23:59:59 à 00:00:00).  
+  - `__str__`: Retourne l'heure sous forme d'une chaîne de caractères formatée, en fonction du format de l'heure spécifié.  
 
 ---
 
@@ -112,6 +112,7 @@ Cette classe hérite de la classe `Time` et permet de gérer l'alarme. Elle incl
 ```plaintext
 - **max_display** : Durée maximale (en secondes) pendant laquelle le message de l'alarme reste visible après son déclenchement (par défaut 10 secondes).
 - **enabled** : Indique si l'alarme est activée ou non.
+```
 
 #### Methodes
 - **`__init__(self, hour, minute, second, format, enabled=False)`** : Initialise l'alarme avec l'heure, les minutes, et les secondes, ainsi que le format de l'heure (12h ou 24h). Si l'alarme est activée, l'attribut `enabled` sera `True`.
@@ -125,14 +126,14 @@ Dans cet exemple, le texte à l'intérieur des balises ` ```plaintext ` sera aff
 - Le titre **Classe `Alarm`** et le texte décrivant la classe sont normaux.
 - Les attributs et méthodes de la classe sont affichés avec un fond gris, comme dans un bloc de code.
 
-Fonctionnalités supplémentaires
+## Fonctionnalités supplémentaires
 + Gestion de l'alarme : Lorsqu'une alarme est définie, un message "Ring ring! Ring ring!" est affiché à l'écran lorsque l'heure de l'alarme est atteinte.
 + Affichage dynamique : L'interface mise à jour chaque seconde affiche en temps réel l'heure actuelle ainsi que l'alarme (si activée). Le message de l'alarme reste visible pendant 10 secondes.
 + Interaction utilisateur via le clavier : Le programme peut être contrôlé via les touches "A" pour interagir et "B" pour quitter une action spécifique.
 
 
 
-##Contributions 
+## Contributions 
  
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
 
@@ -143,7 +144,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, 
 5.Ouvrez une pull request.
 _______
 
-##Licence
+## Licence
 Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
 Si vous avez d'autres questions ou des suggestions pour améliorer ce projet, n'hésitez pas à ouvrir un problème ou une pull request !
@@ -153,4 +154,24 @@ Cela peut varier légèrement selon la plateforme qui interprète le Markdown (G
 ___
 
 ## Fonctionnalites Supplémentaires
++ Gestion de l'alarme : Lorsqu'une alarme est définie, un message "Ring ring! Ring ring!" est affiché à l'écran lorsque l'heure de l'alarme est atteinte.
++ Affichage dynamique : L'interface mise à jour chaque seconde affiche en temps réel l'heure actuelle ainsi que l'alarme (si activée). Le message de l'alarme reste visible pendant 10 secondes.
++ Interaction utilisateur via le clavier : Le programme peut être contrôlé via les touches "A" pour interagir et "B" pour quitter une action spécifique.
 
+
+
+## Contributions 
+ 
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
+
+1.Fork le dépôt.
+2.Créez une branche pour votre fonctionnalité (git checkout -b feature/your-feature).
+3.Commit vos changements (git commit -am 'Add new feature').
+4.Push sur la branche (git push origin feature/your-feature).
+5.Ouvrez une pull request.
+_______
+
+## Licence
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
+Si vous avez d'autres questions ou des suggestions pour améliorer ce projet, n'hésitez pas à ouvrir un problème ou une pull request !
