@@ -124,6 +124,29 @@ Dans cet exemple, le texte à l'intérieur des balises ` ```plaintext ` sera aff
 - Le titre **Classe `Alarm`** et le texte décrivant la classe sont normaux.
 - Les attributs et méthodes de la classe sont affichés avec un fond gris, comme dans un bloc de code.
 
+Fonctionnalités supplémentaires
++ Gestion de l'alarme : Lorsqu'une alarme est définie, un message "Ring ring! Ring ring!" est affiché à l'écran lorsque l'heure de l'alarme est atteinte.
++ Affichage dynamique : L'interface mise à jour chaque seconde affiche en temps réel l'heure actuelle ainsi que l'alarme (si activée). Le message de l'alarme reste visible pendant 10 secondes.
++ Interaction utilisateur via le clavier : Le programme peut être contrôlé via les touches "A" pour interagir et "B" pour quitter une action spécifique.
+
+
+
+##Contributions 
+ 
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
+
+1.Fork le dépôt.
+2.Créez une branche pour votre fonctionnalité (git checkout -b feature/your-feature).
+3.Commit vos changements (git commit -am 'Add new feature').
+4.Push sur la branche (git push origin feature/your-feature).
+5.Ouvrez une pull request.
+_______
+
+##Licence
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
+Si vous avez d'autres questions ou des suggestions pour améliorer ce projet, n'hésitez pas à ouvrir un problème ou une pull request !
+
 Cela peut varier légèrement selon la plateforme qui interprète le Markdown (GitHub, GitLab, etc.).
 
 ___
