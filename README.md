@@ -69,3 +69,64 @@ Ce projet implémente une horloge numérique interactive avec une fonctionnalit�
 
 ___
 
+## Classes et Methodes  
+
+### Classe `Time`
+
+La classe `Time` permet de gérer l'heure, les minutes et les secondes, ainsi que d'incrémenter l'heure en fonction du temps écoulé.
+
+#### Attributs
+
+```plaintext
+- **min_hour** : Valeur minimale de l'heure, par défaut 0.
+- **max_hour** : Valeur maximale de l'heure, par défaut 23.
+- **max_second_minute** : Valeur maximale des minutes et secondes, par défaut 59.
+
+#### Methodes  
+- **`__init__(self, hour, minute, second, format="24h")`** : Initialise l'heure, les minutes, et les secondes. Le format par défaut est "24h".
+- **`in_seconds(self)`** : Retourne l'heure sous forme de secondes depuis minuit.
+- **`increment_time(self)`** : Incrémente l'heure d'une seconde, gère le passage des minutes et des heures.
+- **`__str__(self)`** : Retourne l'heure sous forme de chaîne de caractères dans le format spécifié (12h ou 24h).
+
+### Explication détaillée
+
+- **Attributs** : Cette section décrit les attributs principaux de la classe `Time`, comme les heures minimales et maximales, ainsi que les limites des secondes et des minutes.
+  
+- **Méthodes** :
+  - `__init__`: Cette méthode initialise l'heure à partir des paramètres donnés et définit le format de l'heure (12h ou 24h).
+  - `in_seconds`: Retourne l'heure sous forme de secondes depuis minuit, ce qui permet d'effectuer des calculs de comparaison avec d'autres horaires.
+  - `increment_time`: Cette méthode incrémente l'heure d'une seconde, gère le passage des secondes, minutes, et heures, et redémarre l'horloge si nécessaire (par exemple, de 23:59:59 à 00:00:00).
+  - `__str__`: Retourne l'heure sous forme d'une chaîne de caractères formatée, en fonction du format de l'heure spécifié.
+
+---
+
+Ainsi, la classe `Time` est décrite dans un format similaire à celui de la classe `Alarm`, avec un bloc de code pour chaque méthode et attribut important. Ce format est à la fois facile à lire et permet de bien organiser l'information.
+
+### Classe `Alarm`
+
+Cette classe hérite de la classe `Time` et permet de gérer l'alarme. Elle inclut des fonctionnalités spécifiques pour activer l'alarme et afficher un message de notification lorsqu'elle se déclenche.
+
+#### Attributs
+
+```plaintext
+- **max_display** : Durée maximale (en secondes) pendant laquelle le message de l'alarme reste visible après son déclenchement (par défaut 10 secondes).
+- **enabled** : Indique si l'alarme est activée ou non.
+
+#### Methodes
+- **`__init__(self, hour, minute, second, format, enabled=False)`** : Initialise l'alarme avec l'heure, les minutes, et les secondes, ainsi que le format de l'heure (12h ou 24h). Si l'alarme est activée, l'attribut `enabled` sera `True`.
+- **`__str__(self)`** : Affiche l'heure de l'alarme sous forme lisible, mais uniquement si l'alarme est activée.
+
+
+Dans cet exemple, le texte à l'intérieur des balises ` ```plaintext ` sera affiché avec un fond gris, créant l'effet que vous recherchez.
+
+### Résultat attendu :
+
+- Le titre **Classe `Alarm`** et le texte décrivant la classe sont normaux.
+- Les attributs et méthodes de la classe sont affichés avec un fond gris, comme dans un bloc de code.
+
+Cela peut varier légèrement selon la plateforme qui interprète le Markdown (GitHub, GitLab, etc.).
+
+___
+
+## Fonctionnalites Supplémentaires
+
