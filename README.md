@@ -137,11 +137,11 @@ Dans cet exemple, le texte à l'intérieur des balises ` ```plaintext ` sera aff
  
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
 
-1.Fork le dépôt.
-2.Créez une branche pour votre fonctionnalité (git checkout -b feature/your-feature).
-3.Commit vos changements (git commit -am 'Add new feature').
-4.Push sur la branche (git push origin feature/your-feature).
-5.Ouvrez une pull request.
+1.Fork le dépôt.  
+2.Créez une branche pour votre fonctionnalité (git checkout -b feature/your-feature).  
+3.Commit vos changements (git commit -am 'Add new feature').  
+4.Push sur la branche (git push origin feature/your-feature).  
+5.Ouvrez une pull request.  
 _______
 
 ## Licence
