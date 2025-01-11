@@ -81,6 +81,7 @@ La classe `Time` permet de gérer l'heure, les minutes et les secondes, ainsi qu
 - **min_hour** : Valeur minimale de l'heure, par défaut 0.
 - **max_hour** : Valeur maximale de l'heure, par défaut 23.
 - **max_second_minute** : Valeur maximale des minutes et secondes, par défaut 59.
+````
 
 #### Methodes  
 - **`__init__(self, hour, minute, second, format="24h")`** : Initialise l'heure, les minutes, et les secondes. Le format par défaut est "24h".
